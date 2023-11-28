@@ -1,0 +1,49 @@
+
+
+.content {
+    margin-top: 5rem;
+}
+
+.content form {
+    display: grid;
+    text-align: center;
+    width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content form input {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+
+}
+.content form button {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: 2rem;
+    border-radius: 2rem;
+    border: none;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.content form input::placeholder {
+    font-size: 1rem;
+    text-align: center;
+}
