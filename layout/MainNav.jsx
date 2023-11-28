@@ -18,9 +18,6 @@ const MainNav = () => {
       </logo>
       <ul className={classes.navli}>
         <li>
-          <Link href="/subsage"> Subs Age </Link>
-        </li>
-        <li>
           <Link href="/streamer-follow">FollowList</Link>
         </li>
       </ul>
