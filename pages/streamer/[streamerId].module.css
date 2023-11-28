@@ -46,6 +46,14 @@
     border-radius: 10px;
 }
 
+.insubs {
+    color: skyblue;
+}
+
+.outsubs {
+    color: red;
+}   
+
 .nameandsubs {
     display: flex;
     justify-content: space-between;

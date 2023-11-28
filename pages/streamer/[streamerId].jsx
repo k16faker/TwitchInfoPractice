@@ -73,7 +73,7 @@ const DetailInfo = () => {
                 <li key={founder.id}>
                   <div className={classes.nameandsubs}>
                     <p>{founder.displayName}</p>
-                    <p>
+                    <p className={founder.isSubscribed ? classes.insubs : classes.outsubs}>
                       구독 여부 :{" "}
                       {founder.isSubscribed ? "구독 유지" : "구독 미유지"}
                     </p>
