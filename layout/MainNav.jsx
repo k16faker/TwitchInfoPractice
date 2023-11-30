@@ -18,7 +18,7 @@ const MainNav = () => {
       </logo>
       <ul className={classes.navli}>
         <li>
-          <Link href="/streamer-follow">FollowList</Link>
+          <Link href="/streamer-follow">FollowList(아직 미구현)</Link>
         </li>
       </ul>
     </div>

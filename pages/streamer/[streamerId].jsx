@@ -10,6 +10,7 @@ const archivo = Archivo({ weight: "700", subsets: ["latin"] });
 const DetailInfo = () => {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(true);
+  const [isError, setIsError] = useState(false);
   const { streamerId } = router.query;
   const [jsonData, setJsonData] = useState({});
   const [founderData, setFounderData] = useState({});
@@ -29,6 +30,7 @@ const DetailInfo = () => {
     const data = await response.json();
     const foundData = await founderRepsonse.json();
     const vipData = await vipResponse.json();
+    console.log(data[0]);
     console.log(vipData.mods);
     console.log(foundData.founders);
     setJsonData(data[0]);
@@ -52,7 +54,16 @@ const DetailInfo = () => {
         <p>Loading...</p>
       </div>
     );
-  } else {
+  } else if (jsonData === undefined) {
+    content = (
+      <div className={classes.error}>
+        <p>해당 id의 스트리머는 존재하지 않습니다</p>
+        <Link href="/">
+          홈으로 돌아가기
+        </Link>
+      </div>
+    );
+  } else if(jsonData) {
     content = (
       <div className={`${classes.fullcontent} ${archivo.className}`}>
         <div className={classes.headcontent}>
