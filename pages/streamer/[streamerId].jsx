@@ -124,4 +124,5 @@ const DetailInfo = () => {
   return <div>{content}</div>;
 };
 
+
 export default DetailInfo;

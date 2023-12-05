@@ -7,6 +7,6 @@
  - VIP 및 매니저 목록
 
 
-<h2>추가 예정 기능</h2>
- - 팔로우 리스트 확인
- - 구독 기간 
+<h2>호스팅 주소</h2>
+
+ - https://twitchinfoprac.vercel.app/
